@@ -9,16 +9,66 @@
   <style>
     body { font-family: 'Inter', sans-serif; }
     summary::-webkit-details-marker { display: none; }
-  </style>
+
+    /* Modern playful enhancements */
+    h1, h2, h3 { letter-spacing: -0.5px; }
+    h1 { color: #FFD166; }
+    h2, h3 { color: #073B4C; }
+
+    section {
+      scroll-margin-top: 100px;
+    }
+
+    .rounded { border-radius: 1rem; }
+    .shadow { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .transition { transition: all 0.3s ease-in-out; }
+
+    a:hover {
+      transform: scale(1.03);
+    }
+
+    /* Fun icons with wiggle effect */
+    .wiggle:hover {
+      animation: wiggle 0.4s ease-in-out infinite;
+    }
+
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-2deg); }
+      50% { transform: rotate(2deg); }
+    }
+
+    /* Pastel card backgrounds */
+    .bg-indigo-50 { background-color: #EEF2FF; }
+    .bg-yellow-50 { background-color: #FFFBEA; }
+    .bg-gray-100 { background-color: #F7FAFC; }
+
+    /* Improved button shadow */
+    .shadow-md:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    /* Scroll animations */
+  [data-aos] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition-property: opacity, transform;
+  }
+
+  [data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800" onload="AOS.init({ duration: 800, once: true });">
 
   <button id="langToggle" class="fixed top-4 right-4 z-50 bg-indigo-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-indigo-700 transition">
     हिन्दी में देखें
   </button>
 
   <!-- HERO SECTION -->
-  <section class="bg-[#031B4E] text-white py-12 md:py-20 px-6">
+  <section class="bg-[#031B4E] text-white py-12 md:py-20 px-6" data-aos="fade-up">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10">
       <div>
         <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4" data-en="Teach Your Child 1000 English Words in Just 30 Days—No Memorization, Just 15 Minutes a Day of Fun!" data-hi="सिर्फ 30 दिनों में अपने बच्चे को 1000 अंग्रेज़ी शब्द सिखाएं – बिना रट्टा, सिर्फ़ 15 मिनट रोज़ का मज़ा!">Teach Your Child 1000 English Words in Just 30 Days—No Memorization, Just 15 Minutes a Day of Fun!</h1>
@@ -40,7 +90,7 @@
   </section>
 
   <!-- SECRETS SECTION -->
-<section class="bg-white py-12 px-6">
+<section class="bg-white py-12 px-6" data-aos="fade-up">
   <div class="max-w-5xl mx-auto text-center">
     <h2 class="text-2xl md:text-3xl font-bold mb-10">The 3 Secrets to Your Child’s English Success</h2>
     <div class="grid md:grid-cols-3 gap-6 text-left">
@@ -61,7 +111,7 @@
 </section>
 
 <!-- BONUSES SECTION -->
-<section class="bg-yellow-50 py-12 px-6">
+<section class="bg-yellow-50 py-12 px-6" data-aos="fade-up">
   <div class="max-w-6xl mx-auto text-center">
     <h2 class="text-2xl md:text-3xl font-bold mb-6">Register Before Midnight & Unlock Bonuses Worth ₹8,997/-</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
@@ -77,7 +127,7 @@
 </section>
 
 <!-- TESTIMONIAL SECTION -->
-<section class="bg-white py-12 px-6">
+<section class="bg-white py-12 px-6" data-aos="fade-up">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-2xl md:text-3xl font-bold mb-6">What Moms Are Saying</h2>
     <blockquote class="bg-gray-100 p-6 rounded shadow text-left italic">
@@ -87,7 +137,7 @@
 </section>
 
 <!-- CURRICULUM SNAPSHOT -->
-<section class="bg-gray-100 py-12 px-6">
+<section class="bg-gray-100 py-12 px-6" data-aos="fade-up">
   <div class="max-w-5xl mx-auto text-center">
     <h2 class="text-2xl md:text-3xl font-bold mb-6">What You’ll Master in 5 Days</h2>
     <ul class="text-left space-y-4">
@@ -101,7 +151,7 @@
 </section>
 
 <!-- 3-STEP CTA SECTION -->
-<section class="bg-white py-12 px-6">
+<section class="bg-white py-12 px-6" data-aos="fade-up">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-2xl md:text-3xl font-bold mb-4">Here’s How to Start:</h2>
     <ol class="text-left space-y-4">
@@ -115,7 +165,7 @@
 </section>
 
 <!-- FINAL CTA & PS -->
-<section class="bg-[#031B4E] text-white py-12 px-6 text-center">
+<section class="bg-[#031B4E] text-white py-12 px-6 text-center" data-aos="zoom-in">
   <div class="max-w-3xl mx-auto">
     <h2 class="text-2xl md:text-3xl font-bold mb-6">Still Thinking?</h2>
     <p class="mb-4 text-sm">P.S. You don’t need perfect English to teach your child—just 15 minutes and the right method. You’ll start seeing results within the first week!</p>
