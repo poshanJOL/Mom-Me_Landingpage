@@ -61,7 +61,7 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
-<body class="bg-white text-gray-800 text-xl md:text-2xl leading-relaxed" onload="AOS.init({ duration: 800, once: true });">
+<body class="bg-white text-gray-800 text-xl md:text-2xl leading-relaxed">
 
   <button id="langToggle" class="fixed top-4 right-4 z-50 bg-indigo-600 text-neutral-50 px-4 py-2 rounded-full shadow-md hover:bg-indigo-700 transition">
     हिन्दी में देखें
@@ -269,6 +269,9 @@
       startCountdown(900, countdownElement); // 15 minutes countdown
     }
   };
+</script>
+<script>
+  AOS.init({ duration: 800, once: true });
 </script>
 </body>
 </html>
