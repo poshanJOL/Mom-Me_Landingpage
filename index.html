@@ -1,207 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Poshan's Joy of Learning</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --red: #ea374b;
-      --white: #ffffff;
-      --black: #231f20;
-      --blue: #72a6ff;
-      --grey: #f5f5f5;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Outfit', sans-serif;
-      background: var(--black);
-      color: var(--white);
-      line-height: 1.6;
-    }
-
-    section {
-      max-width: 1120px;
-      margin: auto;
-      padding: 4rem 1.5rem;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      align-items: center;
-      background: linear-gradient(to right, #2a2a2a, #1c1a22);
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .cta-btn {
-      background: var(--red);
-      color: var(--white);
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 1rem;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .benefits {
-      display: flex;
-      gap: 1rem;
-      text-align: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .benefit-box {
-      background: #2e2c30;
-      padding: 2rem;
-      border-radius: 12px;
-      flex: 1 1 30%;
-    }
-
-    .modules {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
-    }
-
-    .module-list h2 {
-      font-size: 2rem;
-      font-weight: 800;
-      border-left: 4px solid var(--red);
-      padding-left: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .module {
-      border: 1px solid rgba(255,255,255,0.1);
-      padding: 1.2rem;
-      border-bottom: none;
-    }
-
-    .module:last-child {
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      border-radius: 0 0 12px 12px;
-    }
-
-    .module-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      color: #aaa;
-    }
-
-    .module-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin: 0.25rem 0 0;
-    }
-
-    .right-cta {
-      background: #0e0d11;
-      padding: 2rem;
-      border-radius: 16px;
-      border: 1px solid var(--red);
-    }
-
-    .right-cta h3 {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-
-    .right-cta ul {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 2rem;
-    }
-
-    .right-cta li {
-      margin-bottom: 0.6rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero, .modules {
-        grid-template-columns: 1fr;
-      }
-      .benefits {
-        flex-direction: column;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poshan’s Joy of Learning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <div>
-      <h1>Poshan’s Joy of Learning</h1>
-      <p>A joyful, step-by-step English program for children aged 3.5 to 10 years.<br>
-        From the trusted team with 20+ years of early learning excellence.</p>
-      <a href="#" class="cta-btn">Book a Free Trial Class</a>
+    <div class="hero-text">
+      <h1>Teach Your Child 1000+ English Words Without Grammar or Rote Learning</h1>
+      <p>Poshan’s Joy of Learning – A joyful, step‑by‑step English program for children aged 3.5 to 10 years.<br>From the trusted team with 20+ years of early learning excellence.</p>
+      <a href="#format" class="btn primary">Register today for ₹499.00</a>
     </div>
-    <img src="https://cdn-icons-png.flaticon.com/512/4151/4151149.png" alt="Child Learning" style="width:100%; max-width:400px; border-radius: 12px;">
-  </section>
-
-  <!-- Benefits Section -->
-  <section>
-    <h2 style="text-align:center; font-size:1.8rem; font-weight:800; margin-bottom:2rem;">Why Parents Choose Us</h2>
-    <div class="benefits">
-      <div class="benefit-box">💻 Safe, nurturing, engaging classes</div>
-      <div class="benefit-box">👩‍🏫 Warm, trained, friendly educators</div>
-      <div class="benefit-box">🧠 Confidence + fluency without pressure</div>
+    <div class="hero-img">
+      <img src="https://via.placeholder.com/500x400" alt="Mother and child learning">
     </div>
   </section>
 
-  <!-- Curriculum Section -->
-  <section class="modules">
+  <!-- Benefits -->
+  <section class="benefits">
+    <h2>The 3 Secrets to Your Child’s English Success</h2>
+    <div class="benefit-grid">
+      <div class="box"><strong>Secret 1:</strong> Fun with sounds & phonics daily</div>
+      <div class="box"><strong>Secret 2:</strong> Engaging stories build vocabulary</div>
+      <div class="box"><strong>Secret 3:</strong> Just 15 mins a day – stress-free</div>
+    </div>
+  </section>
+
+  <!-- Hero 2 style modules -->
+  <section class="modules" id="format">
     <div class="module-list">
-      <h2>What Your Child Will Learn</h2>
-      <div class="module">
-        <p class="module-label">MODULE 1</p>
-        <h3 class="module-title">Phonic Sounds & Blending</h3>
-      </div>
-      <div class="module">
-        <p class="module-label">MODULE 2</p>
-        <h3 class="module-title">Daily Vocabulary Building</h3>
-      </div>
-      <div class="module">
-        <p class="module-label">MODULE 3</p>
-        <h3 class="module-title">Speaking & Listening Practice</h3>
-      </div>
-      <div class="module">
-        <p class="module-label">MODULE 4</p>
-        <h3 class="module-title">Reading with Phonics</h3>
-      </div>
-      <div class="module">
-        <p class="module-label">MODULE 5</p>
-        <h3 class="module-title">Games, Songs & Stories</h3>
-      </div>
+      <h2>What You’ll Learn in 5 Days</h2>
+      <div class="module"><p class="label">MODULE 1</p><h3>Sound Foundations</h3></div>
+      <div class="module"><p class="label">MODULE 2</p><h3>Phonics & Blending</h3></div>
+      <div class="module"><p class="label">MODULE 3</p><h3>Fluency & Sight Words</h3></div>
+      <div class="module"><p class="label">MODULE 4</p><h3>Spelling & Word Building</h3></div>
+      <div class="module"><p class="label">MODULE 5</p><h3>Comprehension & Confidence</h3></div>
     </div>
-
-    <div class="right-cta">
-      <h3>Give Your Child a Confident Start</h3>
-      <p style="margin: 1rem 0 1.5rem; color:#ccc;">Powered by Poshan’s Joy of Learning</p>
+    <div class="cta-box">
+      <h3>How to teach English to your child the easy way</h3>
+      <p class="sub">Instructed by Lata Krishna Mohan</p>
       <ul>
-        <li>✅ For kids aged 3.5 to 10 years</li>
-        <li>✅ 1:1 and 5:1 flexible formats</li>
-        <li>✅ Just 2 joyful sessions/week</li>
+        <li>✅ Designed for Moms & young children (ages 3.5 to 10)</li>
+        <li>✅ Builds reading habits & word power</li>
+        <li>✅ Just 15 minutes a day, no stress</li>
       </ul>
-      <a href="#" class="cta-btn">Try a Free Class</a>
+      <a href="#" class="btn primary">Register Today</a>
     </div>
   </section>
 
+  <!-- Bonuses -->
+  <section class="bonuses">
+    <h2>Register Before Midnight & Unlock Bonuses Worth ₹29,997</h2>
+    <div class="bonus-grid">
+      <div class="bonus"><strong>Bonus 1:</strong> 5‑Day Fluency Journal for Moms <span>Value: ₹5,000</span></div>
+      <div class="bonus"><strong>Bonus 2:</strong> 1000 Words Starter Kit <span>Value: ₹6,000</span></div>
+      <div class="bonus"><strong>Bonus 3:</strong> English in Daily Life Checklist <span>Value: ₹7,000</span></div>
+      <div class="bonus"><strong>Bonus 4:</strong> Mini Word‑Game Bundle (PDF) <span>Value: ₹6,000</span></div>
+      <div class="bonus"><strong>Bonus 5:</strong> WhatsApp Community Support Group <span>Value: ₹10,000</span></div>
+      <div class="bonus"><strong>Bonus 6:</strong> Certificate of Completion <span>Value: ₹4,997</span></div>
+    </div>
+    <div class="bonus-cta"><a href="#" class="btn primary">Register Today</a></div>
+  </section>
+
+  <!-- About & Testimonials -->
+  <section class="about-testimonials">
+    <div class="about">
+      <img src="https://via.placeholder.com/300x400" alt="Lata Krishna Mohan">
+      <div>
+        <h2>About Lata Krishna Mohan</h2>
+        <p>[Insert full bio paragraph here…]</p>
+      </div>
+    </div>
+    <div class="testimonials">
+      <h2>Testimonials</h2>
+      <div class="test-grid">
+        <div class="test"><p>“My child spoke in sentences in a few weeks!”</p><strong>– Neha M.</strong></div>
+        <div class="test"><p>“My daughter reads on her own now.”</p><strong>– Parent, Mandya</strong></div>
+        <div class="test"><p>“The teaching style is fun & engaging!”</p><strong>– Shweta</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="q">Do I need to be fluent in English?</div>
+    <div class="a">No, moms from any background can guide their child.</div>
+    <div class="q">What age group is suitable?</div>
+    <div class="a">Perfect for children aged 3.5 to 10 years.</div>
+    <div class="q">How much time each day?</div>
+    <div class="a">Just 15 minutes a day, and you're good.</div>
+    <div class="q">What if I miss a day?</div>
+    <div class="a">You can catch up easy with supplied trackers.</div>
+    <div class="q">Is there a refund policy?</div>
+    <div class="a">Yes—full refund if not satisfied within 7 days.</div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <h2>Still Thinking?</h2>
+    <p>You don’t need perfect English to teach your child. You just need the right method—15 minutes a day, and results follow.</p>
+    <a href="#" class="btn primary">Register Today</a>
+  </section>
+
+  <footer><p>©2025 Poshan’s Joy of Learning • All rights reserved.</p></footer>
 </body>
 </html>
