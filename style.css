@@ -1,146 +1,18 @@
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
-  background: #FAF8F6;
+  background: url('https://i.imgur.com/LVXQyVU.png') repeat;
+  background-size: 300px;
   color: #333;
   line-height: 1.8;
   font-size: 18px;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.navbar {
-  background: #FFF;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 3rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  max-width: 1120px;
-  margin: 0 auto;
-}
-.logo {
-  font-family: 'DM Serif Display', serif;
-  font-size: 2rem;
-  color: #7F61FF;
-}
-.navbar nav a {
-  margin-left: 2rem;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #444;
-}
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(to right, #fce3e9, #e3fdf5);
-  max-width: 1120px;
-  margin: auto;
-}
-.hero-text h1 {
-  font-family: 'DM Serif Display', serif;
-  font-size: 2.8rem;
-  color: #2d2d2d;
-  margin-bottom: 1rem;
-}
-.hero-text p {
-  font-size: 1.15rem;
-  color: #444;
-}
-.cta-group {
-  margin-top: 1.8rem;
-}
-.btn {
-  padding: 0.9rem 1.7rem;
-  border-radius: 30px;
-  font-weight: bold;
-  margin-right: 1rem;
-  font-size: 1rem;
-}
-.primary {
-  background: #7F61FF;
-  color: white;
-}
-.secondary {
-  border: 2px solid #7F61FF;
-  color: #7F61FF;
-}
-.hero-art img {
-  max-width: 100%;
-  padding: 1rem;
-}
-section {
-  padding: 3.5rem 2rem;
-  max-width: 1120px;
-  margin: auto;
-}
-h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-.features {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  padding: 0;
-  font-size: 1.1rem;
-}
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  font-size: 1.05rem;
-}
-.note {
-  text-align: center;
-  margin-top: 1rem;
-  color: #777;
-  font-size: 1rem;
-}
-blockquote {
-  background: #fff;
-  padding: 1.2rem 1.6rem;
-  border-left: 4px solid #7F61FF;
-  margin: 1.5rem 0;
-  font-style: italic;
-  font-size: 1.05rem;
-}
-.cta-enroll {
-  background: #f7f3ff;
-  text-align: center;
-  padding: 3rem 2rem;
-}
-.cta-enroll h2 {
-  font-size: 2rem;
-}
-.cta-enroll p {
-  font-size: 1.05rem;
-}
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #ECECEC;
-  font-size: 1rem;
-}
-@media (max-width: 768px) {
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 2.5rem 1.5rem;
-  }
-  .features, .grid-2 {
-    grid-template-columns: 1fr;
-  }
-  .navbar nav {
-    display: none;
-  }
-  .hero-text h1 {
-    font-size: 2rem;
-  }
+
+/* Transparent look for all content containers */
+section, .hero, .cta-enroll, footer {
+  background-color: rgba(255, 255, 255, 0.85); /* white with 85% opacity */
+  border-radius: 12px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
 }
