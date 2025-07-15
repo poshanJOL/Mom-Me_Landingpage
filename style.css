@@ -1,18 +1,97 @@
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  background: url('https://i.imgur.com/LVXQyVU.png') repeat;
-  background-size: 300px;
-  color: #333;
-  line-height: 1.8;
-  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  background: #1C1A22;
+  color: white;
 }
 
-/* Transparent look for all content containers */
-section, .hero, .cta-enroll, footer {
-  background-color: rgba(255, 255, 255, 0.85); /* white with 85% opacity */
-  border-radius: 12px;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+.pjol-section {
+  max-width: 1120px;
+  margin: 60px auto;
+  padding: 0 2rem;
+}
+
+.pjol-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2.5rem;
+}
+
+/* Left Column: Learning Modules */
+.pjol-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  border-left: 4px solid #FF6600;
+  padding-left: 1rem;
+}
+
+.module {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-bottom: none;
+}
+.module:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 12px 12px;
+}
+.module-label {
+  font-size: 0.75rem;
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+.module-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Right CTA */
+.cta-box {
+  background: #0E0D11;
+  border: 1px solid #FF6600;
+  border-radius: 16px;
+  padding: 2rem;
+}
+.cta-box h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.cta-sub {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.cta-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem 0;
+}
+.cta-features li {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+.cta-btn {
+  display: inline-block;
+  background: #FF6600;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pjol-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta-box {
+    margin-top: 2rem;
+  }
 }
