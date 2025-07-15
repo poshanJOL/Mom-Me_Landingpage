@@ -27,6 +27,36 @@
       margin: 0 auto;
       padding: 80px 0;
     }
+    .navbar {
+      background: #fff;
+      border-bottom: 2px solid #f0f0f0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar-container {
+      width: 1120px;
+      margin: 0 auto;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-logo {
+      font-weight: 800;
+      font-size: 26px;
+      color: #ea374b;
+    }
+    .navbar-links a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #231f20;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .navbar-links a:hover {
+      color: #ea374b;
+    }
     .hero {
       padding: 160px 0;
       text-align: center;
@@ -68,15 +98,13 @@
     }
     .image-placeholder {
       width: 100%;
-      height: 280px;
-      background-color: #f0f0f0;
-      border: 2px dashed #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #aaa;
-      font-size: 18px;
+      height: auto;
       margin: 30px 0;
+    }
+    .image-placeholder img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
     }
     footer {
       text-align: center;
@@ -87,6 +115,19 @@
   </style>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">Poshan 🌈</div>
+      <div class="navbar-links">
+        <a href="#">Home</a>
+        <a href="#formats">Formats</a>
+        <a href="#skills">Skills</a>
+        <a href="#stories">Stories</a>
+        <a href="#cta">Enroll</a>
+      </div>
+    </div>
+  </nav>
+
   <section class="hero bg-gradient">
     <h1>🌟 Poshan’s Joy of Learning – Online English Classes for Kids</h1>
     <p>A joyful, step-by-step English program for children aged 3.5 to 10 years</p>
@@ -95,22 +136,22 @@
   </section>
 
   <section class="bg-dark">
-    <div class="assets/hero-section.png">[Insert Hero Image Here]</div>
+    <div class="image-placeholder"><img src="assets/hero-section.png" alt="Hero section image"></div>
     <h2>🧒 Why Parents Choose Us</h2>
     <p>Every child learns differently — and at Poshan’s Joy of Learning, we celebrate that!<br>
     Our online English classes offer a safe, nurturing, and interactive environment where children learn naturally and joyfully, building strong communication skills and lifelong confidence in English.</p>
   </section>
 
-  <section>
+  <section id="formats">
     <h2>👩‍🏫 Choose Your Perfect Learning Format</h2>
-    <div class="assets/1-to-1.png">[Insert 1:1 Learning Image Here]</div>
+    <div class="image-placeholder"><img src="assets/1-to-1.png" alt="1-to-1 Learning"></div>
     <h3>✅ 1:1 Personalised Learning</h3>
     <ul>
       <li>Individual attention from expert, warm-hearted educators</li>
       <li>Lessons tailored to your child's pace and personality</li>
       <li>Customised content that evolves with their progress</li>
     </ul>
-    <div class="assets/1-to-5.png">[Insert Group Learning Image Here]</div>
+    <div class="image-placeholder"><img src="assets/1-to-5.png" alt="Small group learning"></div>
     <h3>✅ 5:1 Small Group Learning</h3>
     <ul>
       <li>Peer learning in a cozy group of 5 children</li>
@@ -120,7 +161,7 @@
     </ul>
   </section>
 
-  <section class="bg-dark">
+  <section class="bg-dark" id="skills">
     <h2>📚 Skills Your Child Will Develop</h2>
     <ul>
       <li>🔤 Letter sounds & blending – for foundational reading skills</li>
@@ -131,7 +172,7 @@
   </section>
 
   <section>
-    <div class="assets/program-speacial.png">[Insert Happy Parent-Child Image Here]</div>
+    <div class="image-placeholder"><img src="assets/program-special.png" alt="Program Special"></div>
     <h2>💡 What Makes Our Program Special?</h2>
     <ul>
       <li>🧡 20+ years of trusted early education experience</li>
@@ -142,25 +183,12 @@
     </ul>
   </section>
 
-  <section class="bg-dark">
+  <section class="bg-dark" id="stories">
     <h2>👨‍👩‍👧 Parent Success Stories</h2>
     <blockquote>“My child started speaking in English sentences within a few weeks! The teacher was so kind and encouraging.”<br>— Neha M., Mom of a 5-year-old</blockquote>
     <blockquote>“My daughter reads on her own now. A proud moment for us!”<br>— Parent, Class 1, Mandya</blockquote>
   </section>
 
   <section id="cta">
-    <div class="assets/ready.png">[Insert CTA Image Here]</div>
-    <h2>🎉 Ready to Begin Your Child’s English Journey?</h2>
-    <p>Spots fill fast — give your child the confidence to speak, read, and excel in English.</p>
-    <a href="#" class="btn primary">👉 Book a Free Trial Class</a>
-    <a href="#" class="btn secondary">👉 View Fees & Timings</a>
-    <a href="#" class="btn secondary">👉 Talk to a Learning Advisor</a>
-    <p>✨ Let learning be joyful. Let confidence grow naturally.<br>
-    Let your child shine with Poshan’s Joy of Learning 🌈</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Poshan’s Joy of Learning. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+    <div class="image-placeholder"><img src="assets/ready.png" alt="Call to Action"></div>
+    <h2>🎉 Ready to Begin Your Child’
