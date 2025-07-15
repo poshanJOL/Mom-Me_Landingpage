@@ -1,97 +1,71 @@
+:root {
+  --red: #ea374b;
+  --white: #ffffff;
+  --black: #231f20;
+  --blue: #72a6ff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  margin: 0;
   font-family: 'Outfit', sans-serif;
-  background: #1C1A22;
-  color: white;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
 }
+section { max-width:1120px; margin:auto; padding:3rem 1.5rem; }
+h2 { font-size:1.8rem; text-align:center; margin-bottom:1.5rem; font-weight:700; }
 
-.pjol-section {
-  max-width: 1120px;
-  margin: 60px auto;
-  padding: 0 2rem;
-}
+/* Hero */
+.hero { display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center; }
+.hero h1 { font-size:2.5rem; font-weight:800; margin-bottom:1rem; }
+.hero p { font-size:1rem; margin-bottom:1.5rem; }
+.btn.primary { background:var(--red); color:var(--white); padding:1rem 2rem; border-radius:8px; text-decoration:none; font-weight:700; }
+.hero-img img { width:100%; border-radius:12px; }
 
-.pjol-grid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 2.5rem;
-}
+/* Benefits */
+.benefit-grid { display:flex; gap:1rem; justify-content:space-between; flex-wrap:wrap; }
+.benefit-box { background:#2e2c30; flex:1; padding:1.5rem; border-radius:8px; text-align:center; font-size:1rem; }
 
-/* Left Column: Learning Modules */
-.pjol-title {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 2rem;
-  border-left: 4px solid #FF6600;
-  padding-left: 1rem;
-}
+/* Modules */
+.modules { display:grid; grid-template-columns:2fr 1fr; gap:2rem; align-items:start; }
+.module-list h2 { border-left:4px solid var(--red); padding-left:1rem; margin-bottom:1rem; }
+.module { border:1px solid rgba(255,255,255,0.1); padding:1rem; border-bottom:none; }
+.module:last-child { border-bottom:1px solid rgba(255,255,255,0.1); border-radius:0 0 12px 12px; }
+.label { font-size:0.75rem; color:#aaa; text-transform:uppercase; }
+.module h3 { font-size:1.2rem; font-weight:600; margin:0.3rem 0 0; }
+.cta-box { background:#0e0d11; border:1px solid var(--red); padding:1.5rem; border-radius:12px; }
+.cta-box h3 { font-size:1.4rem; font-weight:700; margin-bottom:0.5rem; }
+.cta-box .sub { color:#ccc; margin-bottom:1rem; }
+.cta-box ul { list-style:none; margin-bottom:1rem; }
+.cta-box li { margin-bottom:0.6rem; }
 
-.module {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-bottom: none;
-}
-.module:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0 0 12px 12px;
-}
-.module-label {
-  font-size: 0.75rem;
-  color: #aaa;
-  text-transform: uppercase;
-  margin-bottom: 0.3rem;
-}
-.module-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0;
-}
+/* Bonuses */
+.bonus-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.bonus { background:var(--black); border:1px solid var(--white); padding:1rem; border-radius:8px; font-size:0.95rem; }
+.bonus strong { display:block; margin-bottom:0.5rem; }
+.bonus span { color:#ccc; font-size:0.9rem; }
 
-/* Right CTA */
-.cta-box {
-  background: #0E0D11;
-  border: 1px solid #FF6600;
-  border-radius: 16px;
-  padding: 2rem;
-}
-.cta-box h3 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  line-height: 1.4;
-  margin-bottom: 1rem;
-}
-.cta-sub {
-  color: #ccc;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-.cta-features {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 2rem 0;
-}
-.cta-features li {
-  font-size: 0.95rem;
-  margin-bottom: 0.6rem;
-}
-.cta-btn {
-  display: inline-block;
-  background: #FF6600;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-}
+/* About/Testimonials */
+.about-testimonials .about { display:flex; gap:2rem; align-items:center; margin-bottom:2rem; }
+.about img { width:300px; border-radius:8px; }
+.test-grid { display:flex; gap:1rem; flex-wrap:wrap; }
+.test { background:#2e2c30; padding:1rem; flex:1 1 30%; border-radius:8px; }
+.test p { font-size:0.9rem; margin-bottom:0.5rem; }
+
+/* FAQ */
+.faq .q { background:#2e2c30; padding:1rem; cursor:pointer; margin-bottom:0.5rem; }
+.faq .a { display:none; padding:1rem; background:#3a383c; margin-bottom:1rem; }
+
+/* Final CTA */
+.final-cta { background:var(--red); text-align:center; border-radius:8px; padding:2rem; }
+.final-cta h2 { font-size:1.8rem; margin-bottom:1rem; }
+.final-cta a.btn.primary { background:var(--white); color:var(--red); }
+
+/* Footer */
+footer { text-align:center; padding:2rem; font-size:0.9rem; color:#777; }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .pjol-grid {
-    grid-template-columns: 1fr;
-  }
-  .cta-box {
-    margin-top: 2rem;
-  }
+@media (max-width:768px) {
+  .hero, .modules, .about-testimonials .about { grid-template-columns:1fr; flex-direction:column; }
+  .testimonial .test-grid, .bonus-grid, .benefit-grid { flex-direction:column; display:block; gap:1rem; }
 }
