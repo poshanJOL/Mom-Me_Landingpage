@@ -1,142 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Poshan’s Joy of Learning</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
     body {
+      margin: 0;
       font-family: 'Outfit', sans-serif;
       font-size: 20px;
       line-height: 1.6;
-      background-color: #fff;
-      margin: 0;
-      padding: 0;
+      background: #fff;
+      color: #231f20;
     }
-
     section {
       padding: 80px 20px;
     }
-
     .hero {
-      padding-top: 160px;
-      padding-bottom: 160px;
+      background: linear-gradient(90deg, #ea374b, #72a6ff);
+      color: #fff;
+      padding: 160px 20px;
       text-align: center;
+    }
+    h1, h2 {
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    p {
+      margin: 10px 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 10px;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    .btn.primary {
       background-color: #ea374b;
       color: #fff;
     }
-
-    h1, h2, h3 {
-      font-size: 2em;
-      font-weight: 800;
-      margin-bottom: 0.5em;
-    }
-
-    .btn.primary {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #231f20;
-      color: #fff;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
     .btn.secondary {
-      display: inline-block;
-      padding: 12px 25px;
-      margin: 5px;
-      background-color: #72a6ff;
-      color: #231f20;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li::before {
-      content: "✅ ";
-    }
-
-    .format-grid {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .format-box {
-      flex: 1;
-      min-width: 250px;
-      background-color: #f4f4f4;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    blockquote {
-      font-style: italic;
-      color: #231f20;
-      margin: 20px 0;
-    }
-
-    footer {
       background-color: #231f20;
       color: #fff;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+    footer {
       text-align: center;
-      padding: 40px 20px;
+      padding: 40px;
+      background: #231f20;
+      color: #fff;
     }
   </style>
 </head>
 <body>
-
-  <!-- Hero -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>🌟 Poshan’s Joy of Learning – Online English Classes for Kids</h1>
-      <p>A joyful, step-by-step English program for children aged 3.5 to 10 years</p>
-      <p>From the trusted team with 20+ years of early learning excellence</p>
-      <a href="#cta" class="btn primary">Book a Free Trial Class</a>
-    </div>
+    <h1>🌟 Poshan’s Joy of Learning – Online English Classes for Kids</h1>
+    <p>A joyful, step-by-step English program for children aged 3.5 to 10 years</p>
+    <p>From the trusted team with 20+ years of early learning excellence</p>
+    <a href="#cta" class="btn primary">Book a Free Trial Class</a>
   </section>
 
-  <!-- Why Parents Choose Us -->
-  <section class="benefits">
+  <section>
     <h2>🧒 Why Parents Choose Us</h2>
     <p>Every child learns differently — and at Poshan’s Joy of Learning, we celebrate that!<br>
     Our online English classes offer a safe, nurturing, and interactive environment where children learn naturally and joyfully, building strong communication skills and lifelong confidence in English.</p>
   </section>
 
-  <!-- Choose Format -->
-  <section class="formats">
+  <section>
     <h2>👩‍🏫 Choose the Right Format for Your Child</h2>
-    <div class="format-grid">
-      <div class="format-box">
-        <h3>✅ 1:1 Personalised Learning</h3>
-        <ul>
-          <li>Individual attention from expert, warm-hearted educators</li>
-          <li>Lessons tailored to your child's pace and personality</li>
-          <li>Customised content that evolves with their progress</li>
-        </ul>
-      </div>
-      <div class="format-box">
-        <h3>✅ 5:1 Small Group Learning</h3>
-        <ul>
-          <li>Peer learning in a cozy group of 5 children</li>
-          <li>Games, roleplay, and storytelling to boost engagement</li>
-          <li>Builds confidence and real-world communication</li>
-          <li>💡 2 engaging sessions per week with flexible scheduling</li>
-        </ul>
-      </div>
-    </div>
+    <h3>✅ 1:1 Personalised Learning</h3>
+    <ul>
+      <li>Individual attention from expert, warm-hearted educators</li>
+      <li>Lessons tailored to your child's pace and personality</li>
+      <li>Customised content that evolves with their progress</li>
+    </ul>
+    <h3>✅ 5:1 Small Group Learning</h3>
+    <ul>
+      <li>Peer learning in a cozy group of 5 children</li>
+      <li>Games, roleplay, and storytelling to boost engagement</li>
+      <li>Builds confidence and real-world communication</li>
+      <li>💡 2 engaging sessions per week with flexible scheduling</li>
+    </ul>
   </section>
 
-  <!-- What Children Learn -->
-  <section class="curriculum">
+  <section>
     <h2>📚 What Your Child Will Learn</h2>
     <ul>
       <li>🔤 Letter sounds & blending – for foundational reading skills</li>
@@ -146,8 +107,7 @@
     </ul>
   </section>
 
-  <!-- What Makes Special -->
-  <section class="special">
+  <section>
     <h2>💡 What Makes Our Program Special?</h2>
     <ul>
       <li>🧡 20+ years of trusted early education experience</li>
@@ -158,28 +118,23 @@
     </ul>
   </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials">
+  <section>
     <h2>👨‍👩‍👧 Parent-Tested. Child-Approved.</h2>
     <blockquote>“My child started speaking in English sentences within a few weeks! The teacher was so kind and encouraging.”<br>— Neha M., Mom of a 5-year-old</blockquote>
     <blockquote>“My daughter reads on her own now. A proud moment for us!”<br>— Parent, Class 1, Mandya</blockquote>
   </section>
 
-  <!-- CTA -->
-  <section class="cta" id="cta">
+  <section id="cta">
     <h2>🎉 Ready to Begin?</h2>
     <p>Spots fill fast — give your child a confident start in English.</p>
-    <div class="cta-links">
-      <a href="#" class="btn primary">👉 Book a Free Trial Class</a>
-      <a href="#" class="btn secondary">👉 View Fees & Timings</a>
-      <a href="#" class="btn secondary">👉 Talk to a Learning Advisor</a>
-    </div>
+    <a href="#" class="btn primary">👉 Book a Free Trial Class</a>
+    <a href="#" class="btn secondary">👉 View Fees & Timings</a>
+    <a href="#" class="btn secondary">👉 Talk to a Learning Advisor</a>
     <p>✨ Let Learning Be Joyful.<br>Let Confidence Grow Naturally.<br>Let Your Child Shine with Poshan’s Joy of Learning 🌈</p>
   </section>
 
   <footer>
     <p>© 2025 Poshan’s Joy of Learning. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
