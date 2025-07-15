@@ -2,277 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Poshan’s Joy of Learning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mom + Me English Challenge</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Sora', sans-serif; font-size: 28px; }
-    summary::-webkit-details-marker { display: none; }
-
-    /* Modern playful enhancements */
-    h1, h2, h3 { letter-spacing: -0.5px; font-family: 'Sora', sans-serif; font-size: 44px; }
-    h1 { color: #EC6B2C; }
-    h2, h3 { color: #B03025; }
-
-    section {
-      scroll-margin-top: 100px;
-    }
-
-    .rounded { border-radius: 1rem; }
-    .shadow { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-    .transition { transition: all 0.3s ease-in-out; }
-
-    a:hover {
-      transform: scale(1.03);
-    }
-
-    /* Fun icons with wiggle effect */
-    .wiggle:hover {
-      animation: wiggle 0.4s ease-in-out infinite;
-    }
-
-    @keyframes wiggle {
-      0%, 100% { transform: rotate(-2deg); }
-      50% { transform: rotate(2deg); }
-    }
-
-    /* Pastel card backgrounds */
-    .bg-indigo-50 { background-color: #EEF2FF; }
-    .bg-[#FFF4E8] { background-color: #FFFBEA; }
-    .bg-gray-100 { background-color: #F7FAFC; }
-
-    /* Improved button shadow */
-    .shadow-md:hover {
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    }
-    /* Scroll animations */
-  [data-aos] {
-    opacity: 0;
-    transform: translateY(30px);
-    transition-property: opacity, transform;
-  }
-
-  [data-aos].aos-animate {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-gray-800 text-xl md:text-2xl leading-relaxed">
+<body>
 
-  <button id="langToggle" class="fixed top-4 right-4 z-50 bg-indigo-600 text-neutral-50 px-4 py-2 rounded-full shadow-md hover:bg-indigo-700 transition">
-    हिन्दी में देखें
-  </button>
+  <header class="nav">
+    <div class="logo">poshan</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#formats">Formats</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#cta">Enroll</a>
+    </nav>
+  </header>
 
-  <!-- HERO SECTION -->
-  <section class="bg-[#FFF4E8] text-[#4B3E2E] py-12 md:py-20 px-6" data-aos="fade-up">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10">
-      <div>
-        
-        
-        
-        <div class="flex items-center gap-2 mb-4">
-          <span class="text-yellow-300 text-xl">📅</span>
-          <span class="text-[#B03025] font-medium" data-en="Starts on Monday, 6 PM IST" data-hi="सोमवार शाम 6 बजे शुरू">Starts on Monday, 6 PM IST</span>
-        </div>
-        <a href="https://tagmango.com/web/checkout/680b70f27553c3d170099774" class="inline-block bg-[#EC6B2C] hover:bg-[#d35621] text-black font-bold py-3 px-8 rounded-md shadow-md transition" data-en="Start the 30-Day Word Boost Now — ₹499 Only" data-hi="30-दिन की वर्ड बूस्ट अभी शुरू करें — सिर्फ ₹499">Start the 30-Day Word Boost Now — ₹499 Only</a>
-      </div>
-      <div>
-        <img src="https://yourdomain.com/path-to-mentor-image.jpg" alt="Lata Krishna Mohan" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <h1>🌟 Online English Classes for Kids (Ages 3.5–10)</h1>
+      <p class="sub">Give your child a joyful start in English — from the comfort of your home!</p>
+      <p class="sub">From the trusted team with 20+ years of early learning excellence.</p>
+      <div class="cta-buttons">
+        <a href="#cta" class="btn">Book a Free Trial Class</a>
+        <a href="#cta" class="btn outline">Talk to a Learning Advisor</a>
       </div>
     </div>
-    <div class="text-center mt-6">
-      
+    <div class="hero-right">
+      <img src="hero.jpg" alt="Joyful child learning online">
     </div>
   </section>
 
-  <!-- SECRETS SECTION -->
-<section class="bg-[#FFF4E8] min-h-screen flex items-center py-24 px-6" data-aos="fade-up">
-  <div class="max-w-5xl mx-auto text-center">
-    $1<span data-en="$2" data-hi="">$2</span>$3
-    <div class="grid md:grid-cols-3 gap-6 text-left text-center">
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        $1<span data-en="$2" data-hi="">$2</span>$3
-        <p><span data-en="Your Child Doesn't Need Grammar Rules—They Need Repeated Real-Life English. Kids learn faster through real conversations, just like their mother tongue." data-hi="">Your Child Doesn't Need Grammar Rules—They Need Repeated Real-Life English. Kids learn faster through real conversations, just like their mother tongue.</span></p>
-      </div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="✅ Secret #2" data-hi="">✅ Secret #2</span></h3>
-        $1<span data-en="$2" data-hi="">$2</span>$3
-      </div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="✅ Secret #3" data-hi="">✅ Secret #3</span></h3>
-        <p><span data-en="You Can Teach Even If You're Not Fluent. With plug-and-play tools and support, you’ll grow alongside your child." data-hi="">You Can Teach Even If You're Not Fluent. With plug-and-play tools and support, you’ll grow alongside your child.</span></p>
-      </div>
+  <section id="about">
+    <h2>Why Choose Poshan’s Online English Program?</h2>
+    <ul>
+      <li>💻 Safe & engaging online classrooms</li>
+      <li>🧑‍🏫 Warm, trained educators</li>
+      <li>🧠 A proven, step-by-step English learning journey</li>
+      <li>💬 Real progress, tracked and shared with parents</li>
+    </ul>
+  </section>
+
+  <section id="formats">
+    <h2>Choose the Format That Suits Your Child</h2>
+    <h3>✅ 1:1 Personalised Learning</h3>
+    <ul>
+      <li>Full attention from a dedicated teacher</li>
+      <li>Pacing that matches your child’s comfort</li>
+      <li>Content that evolves with your child</li>
+    </ul>
+    <h3>✅ 5:1 Small Group Learning</h3>
+    <ul>
+      <li>Interactive sessions with 4 other children</li>
+      <li>Group games, stories & roleplay</li>
+      <li>Builds social skills, fluency & fun</li>
+    </ul>
+    <p>📅 2 sessions per week in both formats</p>
+  </section>
+
+  <section id="curriculum">
+    <h2>What Your Child Will Learn</h2>
+    <ul>
+      <li>🔠 Phonic Sounds & Blending</li>
+      <li>🧾 Daily Vocabulary Building</li>
+      <li>🗣️ Speaking and Listening Skills</li>
+      <li>📖 Reading with Phonics for Fluency</li>
+      <li>🧸 Games, Songs & Stories for Fun Learning</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>Parent-Tested. Child-Approved.</h2>
+    <blockquote>“My child started speaking in English sentences within a few weeks!”<br>— Neha M., Mom of a 5-year-old</blockquote>
+    <blockquote>“My daughter now reads on her own — a proud moment for us!”<br>— Parent, Class 1, Mandya</blockquote>
+  </section>
+
+  <section id="cta">
+    <h2>💬 Ready to Enroll?</h2>
+    <p>Spots are limited. Reserve your child’s seat today!</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn">Book a Free Trial Class</a>
+      <a href="#" class="btn">View Program Fees & Timings</a>
+      <a href="#" class="btn outline">Talk to a Learning Advisor</a>
     </div>
-  </div>
-</section>
+    <p>📞 +91-97310 49777<br>📧 poshanspreschool@gmail.com</p>
+  </section>
 
-<!-- BONUSES SECTION -->
-<section class="bg-[#FFF4E8] min-h-screen flex items-center py-24 px-6" data-aos="fade-up">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-2xl md:text-3xl font-bold mb-10">="आज रात से पहले रजिस्टर करें और ₹8,997 के बोनस पाएं">Register Before Midnight & Unlock Bonuses Worth ₹8,997/-</span></h2>
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">📘 “1000 Daily Use English Words” Illustrated eBook – ₹1,499</div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">📝 30 Days of Printable Practice Worksheets – ₹1,997</div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">🎥 “15-Minute Method” Video Training – ₹1,499</div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">📚 Story Vault Access (10 stories) – ₹1,299</div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">💬 WhatsApp Community Support Group – ₹999</div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">🎓 Certificate of Completion for Mom – ₹705</div>
-    </div>
-    $1
-<div id="countdown" class="text-center text-2xl font-bold text-red-600 my-6"></div>
-<a href="https://tagmango.com/web/checkout/680b70f27553c3d170099774" class="inline-block bg-[#EC6B2C] hover:bg-[#d35621] text-white font-bold py-3 px-8 rounded-md shadow-md transition mt-4">Claim Your Spot Now</a>
-  </div>
-</section>
+  <footer>
+    <p>✨ Let Learning Be Joyful.<br>Let Confidence Grow Naturally.<br>Let Your Child Shine with Poshan’s Joy of Learning 🌈</p>
+  </footer>
 
-<!-- TESTIMONIAL SECTION -->
-<section class="bg-[#FFF4E8] min-h-screen flex items-center py-24 px-6" data-aos="fade-up">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl md:text-3xl font-bold mb-10">="माँओं की राय">What Moms Are Saying</span></h2>
-    <blockquote class="bg-[#FFF4E8] text-[#4B3E2E] p-6 rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105 text-left italic">
-      “As a parent of a 10-year-old boy, I was constantly struggling to engage him without screens. With StoryParenting, my son fell in love with reading and now writes his own stories. We've built a deeper bond, and I no longer feel guilty about screen-time. This is truly a game-changer!”
-    </blockquote>
-  </div>
-</section>
-
-<!-- CURRICULUM SNAPSHOT -->
-<section class="bg-gray-100 min-h-screen flex items-center py-24 px-6" data-aos="fade-up">
-  <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-2xl md:text-3xl font-bold mb-10">="5 दिनों में आप क्या सीखेंगे">What You’ll Learn in 5 Days</span></h2>
-    <div class="grid md:grid-cols-2 gap-6 text-left text-center">
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="📘 Sound Foundations" data-hi="">📘 Sound Foundations</span></h3>
-        <p><span data-en="Learn phonemic awareness through fun sound blending" data-hi="">Learn phonemic awareness through fun sound blending</span></p>
-      </div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="🧩 Phonics & Blending" data-hi="">🧩 Phonics & Blending</span></h3>
-        <p><span data-en="Decode CVC, blends, long vowels, digraphs" data-hi="">Decode CVC, blends, long vowels, digraphs</span></p>
-      </div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="👀 Fluency & Sight Words" data-hi="">👀 Fluency & Sight Words</span></h3>
-        <p><span data-en="Read smoothly using high-frequency words" data-hi="">Read smoothly using high-frequency words</span></p>
-      </div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="📝 Spelling & Word Building" data-hi="">📝 Spelling & Word Building</span></h3>
-        <p><span data-en="Create words using patterns, prefixes, suffixes" data-hi="">Create words using patterns, prefixes, suffixes</span></p>
-      </div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="📖 Comprehension & Confidence" data-hi="">📖 Comprehension & Confidence</span></h3>
-        <p><span data-en="Read independently and understand stories" data-hi="">Read independently and understand stories</span></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3-STEP CTA SECTION -->
-<section class="bg-[#FFF4E8] min-h-screen flex items-center py-24 px-6" data-aos="fade-up">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl md:text-3xl font-bold mb-10">="शुरू करने के 3 आसान कदम:">Here’s How to Start:</span></h2>
-    <div class="grid md:grid-cols-3 gap-6 text-left">
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="Step 1" data-hi="">Step 1</span></h3>
-        <p><span data-en="Enroll Now and Unlock All Bonuses Worth ₹8,997" data-hi="">Enroll Now and Unlock All Bonuses Worth ₹8,997</span></p>
-      </div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="Step 2" data-hi="">Step 2</span></h3>
-        <p><span data-en="Spend Just 15 Minutes a Day With Your Child Using Our Templates" data-hi="">Spend Just 15 Minutes a Day With Your Child Using Our Templates</span></p>
-      </div>
-      <div class="bg-[#FFF4E8] text-[#4B3E2E] p-8 min-h-[260px] rounded-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105">
-        <h3 class="font-bold text-2xl mb-3"><span data-en="Step 3" data-hi="">Step 3</span></h3>
-        <p><span data-en="Watch Your Child Use English Words Naturally in Conversations" data-hi="">Watch Your Child Use English Words Naturally in Conversations</span></p>
-      </div>
-    </div>
-    <p><span data-en="🎯 Ready to Begin? Click below and start your English journey together—just ₹499!" data-hi="">🎯 Ready to Begin? Click below and start your English journey together—just ₹499!</span></p>
-    <a href="https://tagmango.com/web/checkout/680b70f27553c3d170099774" class="mt-4 inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-8 rounded-md shadow-md transition">Register Now for Just ₹499</a>
-  </div>
-</section>
-
-<!-- FINAL CTA & PS -->
-<section class="bg-[#EC6B2C] text-white py-20 md:py-32 px-6 text-center" data-aos="zoom-in"><h2 class="text-2xl md:text-3xl font-bold mb-10">="अब भी सोच रहे हैं?">Still Thinking?</span></h2>
-    <p><span data-en="P.S. You don’t need perfect English to teach your child—just 15 minutes and the right method. You’ll start seeing results within the first week!" data-hi="">P.S. You don’t need perfect English to teach your child—just 15 minutes and the right method. You’ll start seeing results within the first week!</span></p>
-    <p><span data-en="P.P.S. This offer with bonuses worth ₹8,997 ends tonight. Click now and make English easy, fun, and doable—together!" data-hi="">P.P.S. This offer with bonuses worth ₹8,997 ends tonight. Click now and make English easy, fun, and doable—together!</span></p>
-    <a href="https://tagmango.com/web/checkout/680b70f27553c3d170099774" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-5 px-12 rounded-2xl shadow-xl transition text-xl">Join the Challenge Now</a>
-  </div>
-</section>
-  <!-- FAQ SECTION -->
-<section class="bg-[#FFF4E8] min-h-screen flex items-center py-24 px-6" data-aos="fade-up">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl md:text-3xl font-bold mb-10">="अक्सर पूछे जाने वाले सवाल">Frequently Asked Questions</span></h2>
-    <div class="space-y-6 text-left">
-      <details class="bg-gray-100 p-4 rounded shadow">
-        <summary class="font-semibold cursor-pointer"><span data-en="Do I need to be fluent in English to join this program?" data-hi="">Do I need to be fluent in English to join this program?</span></summary>
-        <p><span data-en="Not at all! This program is specially designed for moms who are still building their English skills. You’ll learn alongside your child with guided materials." data-hi="">Not at all! This program is specially designed for moms who are still building their English skills. You’ll learn alongside your child with guided materials.</span></p>
-      </details>
-      <details class="bg-gray-100 p-4 rounded shadow">
-        <summary class="font-semibold cursor-pointer"><span data-en="What age group is this program suitable for?" data-hi="">What age group is this program suitable for?</span></summary>
-        <p><span data-en="It’s perfect for children aged 4 to 10. The activities are flexible and can be adapted to different learning levels." data-hi="">It’s perfect for children aged 4 to 10. The activities are flexible and can be adapted to different learning levels.</span></p>
-      </details>
-      <details class="bg-gray-100 p-4 rounded shadow">
-        <summary class="font-semibold cursor-pointer"><span data-en="How much time do I need to spend each day?" data-hi="">How much time do I need to spend each day?</span></summary>
-        <p><span data-en="Just 15 minutes a day! That’s all you need to create powerful English-learning moments." data-hi="">Just 15 minutes a day! That’s all you need to create powerful English-learning moments.</span></p>
-      </details>
-      <details class="bg-gray-100 p-4 rounded shadow">
-        <summary class="font-semibold cursor-pointer"><span data-en="What if I miss a day?" data-hi="">What if I miss a day?</span></summary>
-        <p><span data-en="No problem! You get lifetime access to all materials so you can go at your own pace and revisit any session anytime." data-hi="">No problem! You get lifetime access to all materials so you can go at your own pace and revisit any session anytime.</span></p>
-      </details>
-      <details class="bg-gray-100 p-4 rounded shadow">
-        <summary class="font-semibold cursor-pointer"><span data-en="Is there a refund policy?" data-hi="">Is there a refund policy?</span></summary>
-        <p><span data-en="Since this is a digital program with instant access and bonuses, we currently do not offer refunds. But we’re confident you’ll love it!" data-hi="">Since this is a digital program with instant access and bonuses, we currently do not offer refunds. But we’re confident you’ll love it!</span></p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- Can be inserted here as needed, referencing the Lataka-9 prompts -->
-
-  <script>
-    const toggleButton = document.getElementById('langToggle');
-    let currentLang = 'en';
-    toggleButton.addEventListener('click', () => {
-      currentLang = currentLang === 'en' ? 'hi' : 'en';
-      document.querySelectorAll('[data-en]').forEach(el => {
-        el.innerText = el.dataset[currentLang];
-      });
-      toggleButton.innerText = currentLang === 'en' ? 'हिन्दी में देखें' : 'View in English';
-    });
-  </script>
-
-<footer class="bg-[#FFF4E8] text-[#4B3E2E] text-center py-6 text-sm">
-  © 2025 Mom + Me English Enrichment Program. All rights reserved.
-</footer>
-
-<script>
-  function startCountdown(duration, display) {
-    let timer = duration, minutes, seconds;
-    const interval = setInterval(function () {
-      minutes = parseInt(timer / 60, 10);
-      seconds = parseInt(timer % 60, 10);
-
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-
-      display.textContent = `⏳ Offer Expires In: ${minutes}:${seconds}`;
-
-      if (--timer < 0) {
-        clearInterval(interval);
-        display.textContent = "⏳ Offer expired."
-      }
-    }, 1000);
-  }
-
-  window.onload = function () {
-    const countdownElement = document.getElementById('countdown');
-    if (countdownElement) {
-      startCountdown(900, countdownElement); // 15 minutes countdown
-    }
-  };
-</script>
-<script>
-  AOS.init({ duration: 800, once: true });
-</script>
 </body>
 </html>
